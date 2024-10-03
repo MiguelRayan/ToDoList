@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebList</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tarefas a serem feitas</h1>
+
+        <!-- Seção de Input -->
+        <div class="secaoInput">
+            <input type="text" id="tarefaInput" placeholder="Digite sua tarefa...">
+            <button id="botaoAdd" onclick="addTarefa()">Salvar Tarefa</button>
+        </div>
+
+        <hr>
+
+        <!-- Seção das Tarefas -->
+        <div class="secaoTarefa">
+            <div class="botaoFiltro">
+                <button onclick="mostraTodasTarefas()">Todas as Tarefas</button>
+                <button onclick="mostraCompletaTarefa()">Concluídas</button>
+                <button onclick="mostraIncompletaTarefa()">Não Concluídas</button>
+            </div>
+
+            <div id="listaTarefa">
+                <!-- Lista de Tarefas irá aparecer aqui -->
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Seção do contador -->
+        <div class="contador">
+            <p id="completaCount">Tarefas Concluídas: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

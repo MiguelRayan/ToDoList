@@ -1,0 +1,79 @@
+/* styles.css */
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: lightcyan;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    width: 40%;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.secaoInput {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: rgb(36, 59, 189);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: darkblue;
+}
+
+.secaoTarefa {
+    margin-top: 20px;
+}
+
+.botaoFiltro {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#taskList {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+hr {
+    margin: 20px 0;
+    border: 1px solid #ccc;
+}
+
+.contador {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
